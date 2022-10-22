@@ -216,6 +216,7 @@ class BoardControllerTest {
         boardRepository.saveAll(boardList);
 
         System.out.println("git diff test");
+        System.out.println("git branch test");
 
         //when
         mockMvc.perform(get("/boards?page=0&size=10")
