@@ -215,6 +215,8 @@ class BoardControllerTest {
                         .build()).collect(Collectors.toList());
         boardRepository.saveAll(boardList);
 
+        System.out.println("git diff test");
+
         //when
         mockMvc.perform(get("/boards?page=0&size=10")
                         .contentType(APPLICATION_JSON)
