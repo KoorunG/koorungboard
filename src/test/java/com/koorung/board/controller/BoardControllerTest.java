@@ -217,7 +217,7 @@ class BoardControllerTest {
 
         System.out.println("git diff test");
         System.out.println("git branch test");
-        System.out.println("hello main");
+        System.out.println("hello, i'm koorung -1");
 
         //when
         mockMvc.perform(get("/boards?page=0&size=10")
