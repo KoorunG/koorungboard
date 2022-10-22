@@ -1,0 +1,25 @@
+# DataSource
+spring:
+  profiles:
+    active: test
+
+  # JPA Option
+  jpa:
+    #    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+#  data:
+#    web:
+#      pageable:
+#        one-indexed-parameters: true    # (웹 요청으로부터 날아온) 파라미터의 시작값을 1로 조정하는 기능
+
+# Logging
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace

@@ -1,0 +1,32 @@
+# DataSource
+spring:
+  profiles:
+    active: dev
+  datasource:
+    username: koorung
+    password: 1234
+    url: jdbc:mysql://localhost:3306/koorungboard
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA Option
+  jpa:
+    #    open-in-view: false
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+#  data:
+#    web:
+#      pageable:
+#        one-indexed-parameters: true    # 파라미터의 시작값을 1로 조정하는 기능
+
+
+# Logging
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
